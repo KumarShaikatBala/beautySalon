@@ -1,0 +1,182 @@
+/*******************************
+	All Responsive Code
+*******************************/
+/*Extra small devices (portrait phones, less than 576px) .col- */
+@media (max-width: 575.98px) {
+    /*
+    ==================================
+              Header Top
+    ==================================
+*/
+    .social-links{
+        text-align: center!important;
+    }
+    .time{
+        text-align: center!important;
+    }
+    .time ul li a {
+        margin-left: 0;
+        padding: 0;
+    }
+    /*
+    ==================================
+              Header Main
+    ==================================
+*/
+    .header-main{
+        top: 25%;
+    }
+    .mean-container a.meanmenu-reveal {
+        padding: 10px 10px 10px 10px;
+    }
+    .logo h1{
+
+    }
+    /*
+==========================================
+           Hero Area \ Slider
+==========================================
+*/
+    .slider-active.owl-carousel button.owl-dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 2px;
+    }
+
+    .slider-content h1 {
+        font-size: 35px;
+    }
+    /*
+==========================================
+              About Area
+==========================================
+*/
+    .about-content {
+        padding-bottom: 50px;
+    }
+    .about-content a {
+        padding: 8px 70px;
+    }
+
+    /*
+    ==========================================
+              Directors Area
+    ==========================================
+    */
+
+    .directors-content {
+        margin: 60px 0;
+    }
+    /*
+    ==========================================
+               Works Area
+    ==========================================
+    */
+
+    .hover-content {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+    }
+    .single-work-hover .link {
+        padding-right: 15px;
+        padding-top: 0;
+    }
+
+    /*
+    ==========================================
+            Special Gifts & Cards Area
+    ==========================================
+    */
+    .gift-white-bg,.gift-black-bg  {
+        padding: 30px 40px;
+    }
+    /*
+    ==========================================
+              Reservation Area
+    ==========================================
+    */
+
+    .reservation-contact {
+        width: 260px;
+        padding: 30px 0;
+    }
+    .reservation-celender {
+      margin-top: 80px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up) .col-sm- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*
+==========================================
+           Works Area
+==========================================
+*/
+    .hover-content {
+        padding-top: 0;
+    }
+    .single-work-hover .link {
+        padding-right: 10px;
+        padding-top: 0;
+    }
+    /*
+    ==========================================
+            Special Gifts & Cards Area
+    ==========================================
+    */
+    .gift-white-bg,.gift-black-bg  {
+        padding: 30px 40px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up) .col-md- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*
+==========================================
+           Works Area
+==========================================
+*/
+    .hover-content {
+        padding-top: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .single-work-hover .link {
+        padding-right: 20px;
+        padding-top: 60px;
+    }
+    /*
+    ==========================================
+            Special Gifts & Cards Area
+    ==========================================
+    */
+    .gift-white-bg,.gift-black-bg  {
+        padding: 30px 40px;
+    }
+
+
+}
+/*Large devices (desktops, 992px and up) col-lg- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up) .col-xl- */
+@media (min-width: 1200px) {
+
+}
+@media  (min-width: 1919px){
+    .about-content {
+        padding: 0 35px;
+    }
+    .hover-content {
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-top: 100px;
+    }
+    .single-work-hover .link {
+        padding-right: 20px;
+        padding-top: 90px;
+    }
+}

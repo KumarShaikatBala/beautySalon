@@ -1,0 +1,582 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Beauty Salon
+Version:    1.0
+Last change:    24/10/2018 [fixed Float bug, vf]
+Author Name: Tomal
+Primary use:    HTML5 Template
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.Reset CSS
+2.Header CSS
+        2.1 Header Top
+        2.2 Header Main
+3.Hero Area
+4.About Area
+5.Service
+6.Directors Area
+7.Works Area
+8.Pricing Area
+9.Special Gifts & Cards Area
+10.Reservation Area
+11.Footer Area
+-------------------------------------------------------------------*/
+
+
+/*
+==========================================
+    google font
+==========================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins');
+
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+
+
+
+
+
+
+/*
+==========================================
+            1.Reset CSS
+==========================================
+*/
+html,
+body{
+    height: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+/*
+==========================================
+            Common CSS
+==========================================
+*/
+
+/*section padding:*/
+.section-padding{
+padding: 110px 0;
+}
+
+/*section tittle:*/
+.section-tittle{
+    padding-bottom: 70px;
+}
+.section-tittle h3{
+    padding-bottom: 30px;
+    font-size: 28px;
+    color: #272727;
+    font-family: 'Playfair Display', serif;
+}
+.section-tittle p{
+    color: #acacac;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+/*
+==========================================
+             2.Header CSS
+==========================================
+*/
+/*
+    ==================================
+             2.1 Header Top
+    ==================================
+*/
+.header-top{
+    background-color: #272727;
+    padding: 14px 0;
+}
+.social-links a{
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 18px;
+    padding: 1px;
+    font-size: 18px;
+}
+.social-links a:hover{
+    color: #1da1f2;
+}
+.time{
+    text-align: right;
+}
+.time ul{}
+.time ul li{
+    display: inline-block;
+}
+.time ul li a{
+    display: inline-block;
+    margin-left: 18px;
+    padding: 1px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+.time ul li a.book-now{
+    color: #d8bc7c;
+}
+/*
+    ==================================
+             2.2 Header Main
+    ==================================
+*/
+
+.header-main{
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    top: 10%;
+    z-index: 1111;
+}
+.logo a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 36px;
+    display: inline-block;
+    transition: .9s;
+}
+.logo a:hover{
+    transform: scale(1.1);
+    transition: .9s;
+}
+/*sidemenu:*/
+.meanmenu-reveal.meanclose {
+    z-index: 9;
+}
+/*
+==========================================
+           3.Hero Area \ Slider
+==========================================
+*/
+.single-slide{
+    background-image: url("../img/hero_slider_background.jpg");
+    height: 100vh;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.slider-content h1{
+    font-size: 110px;
+    font-family: 'Playfair Display', serif;
+}
+.slider-content h6{
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+/*owl dots positioning:*/
+.slider-active .owl-dots {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 0;
+    transform: rotate(90deg);
+}
+.slider-active.owl-carousel button.owl-dot {
+    border: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f0f0f0 none repeat scroll 0 0;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    opacity: 0.5;
+
+}
+.slider-active.owl-carousel button.owl-dot.active{
+    background: #ffffff none repeat scroll 0 0;
+    opacity: 1;
+}
+/*
+==========================================
+              4.About Area
+==========================================
+*/
+.about-area{}
+.about-content h2{
+    color: #272727;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+.about-content p{
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 30px;
+    color: #acacac;
+    font-family: 'Poppins', sans-serif;
+}
+.about-content a{
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #272727;
+    padding: 10px 120px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.about-content button{
+    background-color: #acacac;
+    border: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #272727;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    line-height: 22px;
+    margin-right: 6px;
+}
+.about-img img{
+    max-width: 100%;
+    height: auto;
+    transition: .9s;
+}
+.about-img img:hover{
+    transform: scale(1.1);
+}
+/*
+==========================================
+              5.Service Area
+==========================================
+*/
+.services-area .section-tittle{
+    padding-bottom: 30px;
+}
+.service-content h2{
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+.single-service{
+    color: #FFFFFF;
+    height: 250px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    transition: .9s;
+}
+.single-service:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 90%;
+    background-color: rgba(216, 188, 124,0);
+    z-index: -1;
+    transition: .9s;
+}
+.single-service:hover.single-service:after{
+    background-color: rgba(216, 188, 124,0.349);
+}
+.service-img1{
+    background-image:url("../img/services1.jpg");
+    background-size: cover;
+}
+.service-img2{
+    background-image:url("../img/services2.jpg");
+    background-size: cover;
+}
+.service-img3{
+    background-image:url("../img/services3.jpg");
+    background-size: cover;
+}
+.service-img4{
+    background-image:url("../img/services4.jpg");
+    background-size: cover;
+}
+.service-img5{
+    background-image:url("../img/services5.jpg");
+    background-size: cover;
+}
+.service-img6{
+    background-image:url("../img/services6.jpg");
+    background-size: cover;
+}
+/*
+==========================================
+          6.Directors Area
+==========================================
+*/
+
+.directors-area{}
+.directors-main{}
+.directors-left .director-img-divider{
+    padding: 20px 0;
+}
+.directors-left img{
+    transition: .9s;
+}
+.directors-left img:hover{
+    transform: scale(1.1);
+    transition: .9s;
+}
+.directors-content {
+    background-color: #272727;
+    padding: 30px 60px;
+    margin-top: 30px;
+    position: relative;
+}
+.directors-content::after {
+    position: absolute;
+    content: '';
+    top: -30px;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    left: -30px;
+    z-index: -9;
+}
+.directors-content h1,h2{
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+}
+.directors-content h1{
+    font-size: 48px;
+    padding-top: 30px;
+}
+.directors-content h2{
+    padding-top: 10px;
+    font-size: 24px;
+}
+.directors-content p{
+    color: #d8bc7c;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+.director-single-img img{
+    max-width: 100%;
+    transition: .9s;
+}
+.director-single-img img:hover{
+    transform: scale(1.1);
+    transition: .9s;
+}
+/*
+==========================================
+           7.Works Area
+==========================================
+*/
+.works-area {}
+.single-work img{
+    max-width: 100%;
+}
+.single-work{
+    position: relative;
+    transition: .9s;
+}
+.single-work-hover{
+    position: absolute;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(216, 188, 124,0);
+    visibility: hidden;
+    transition: .9s;
+}
+.single-work:hover .single-work-hover{
+    background-color: rgba(216, 188, 124,0.851);
+    visibility: visible;
+    transition: .9s;
+}
+.hover-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+}
+
+.hover-content h1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+.hover-content h2{
+    font-size: 24px;
+    padding: 20px 0;
+}
+.hover-content p{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+.single-work-hover .link {
+    padding-right: 15px;
+    padding-top: 25px;
+}
+.single-work-hover a{
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+/*
+==========================================
+           8.Pricing Area
+==========================================
+*/
+.prices-area{
+    background-image: url("../img/prices.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.price-item{
+    font-size: 18px;
+}
+.price-table .table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+    color: #272727;
+}
+.price-table .table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+     border-top: none;
+    color: #d8bc7c;
+}
+/*
+==========================================
+       9.Special Gifts & Cards Area
+==========================================
+*/
+.gifts-area{}
+.gift-content{}
+.gift-white-bg{
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #272727;
+    padding: 30px 60px;
+}
+.gift-white-bg p,.gift-black-bg p{
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.gift-white-bg h1{
+    color: #d8bc7c;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+.gift-white-bg a{
+    background-color: #272727;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 14px;
+}
+.gift-black-bg h1{
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+.gift-black-bg{
+    background-color: #272727;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.gift-black-bg a{
+    background-color: #d8bc7c;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 14px;
+}
+/*
+==========================================
+           10.Reservation Area
+==========================================
+*/
+.reservation-area{
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: -9;
+}
+.reservation-contact{
+    position: relative;
+    background-color: #FFFFFF;
+    width: 300px;
+    border-radius: 5%;
+    padding: 30px 0;
+}
+.reservation-contact::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-color: #acacac;
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+}
+.address{
+    background-color: #ffffff;
+}
+.reservation-contact ul li{
+    display: block;
+    box-sizing: content-box;
+    font-size: 18px;
+    line-height: 35px;
+    color: #acacac;
+}
+.reservation-social-icon{
+    margin-top: 15px;
+}
+.reservation-social-icon a{
+    display: inline-block;
+    color: #acacac;
+    text-decoration: none;
+    padding: 1px;
+    margin: 5px;
+    font-size: 18px;
+}
+.reservation-social-icon a:hover{
+    color: #1da1f2;
+}
+.reservation-celender{
+    text-align: center;
+}
+/*
+==========================================
+             11.Footer Area
+==========================================
+*/
+.footer-area{
+    background-color: #272727;
+    color: #acacac;
+    padding: 10px 0;
+}
+.footer-area a{
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-content p{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
